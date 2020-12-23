@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="error_catcher",
-    version="0.1",
+    version="0.2",
     author="Wenzhi Ding",
     author_email="wenzhi.ding@foxmail.com",
     description="A decorator to trace error and catch variables.",

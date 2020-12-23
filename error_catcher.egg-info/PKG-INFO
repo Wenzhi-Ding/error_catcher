@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: error-catcher
-Version: 0.1
+Version: 0.2
 Summary: A decorator to trace error and catch variables.
 Home-page: https://github.com/wenzhi-ding/error_catcher
 Author: Wenzhi Ding
