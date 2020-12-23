@@ -1,0 +1,65 @@
+--------------------------------
+2020-12-24 02:53:22
+
+/*Original Traceback*/
+Traceback (most recent call last):
+  File "c:\Users\Dave Ting\Desktop\error_catcher\error_catcher.py", line 143, in decorated
+    func()
+  File "c:\Users\Dave Ting\Desktop\error_catcher\test.py", line 32, in foo5
+    return k / i
+ZeroDivisionError: division by zero
+
+/*Variables*/
+c:\Users\Dave Ting\Desktop\error_catcher\error_catcher.py, line 143
+|-- Detected relevant vars:
+  |-- local: func = <function foo5 at 0x000002C13D9FA430>
+c:\Users\Dave Ting\Desktop\error_catcher\test.py, line 32
+|-- Detected relevant vars:
+  |-- local: k = 2
+  |-- local: i = 0
+
+
+--------------------------------
+2020-12-24 02:53:19
+
+/*Original Traceback*/
+Traceback (most recent call last):
+  File "c:\Users\Dave Ting\Desktop\error_catcher\error_catcher.py", line 143, in decorated
+    func()
+  File "c:\Users\Dave Ting\Desktop\error_catcher\test.py", line 32, in foo5
+    return k / i
+ZeroDivisionError: division by zero
+
+/*Variables*/
+c:\Users\Dave Ting\Desktop\error_catcher\error_catcher.py, line 143
+|-- Detected relevant vars:
+  |-- local: func = <function foo5 at 0x000002C13D9FA430>
+c:\Users\Dave Ting\Desktop\error_catcher\test.py, line 32
+|-- Detected relevant vars:
+  |-- local: k = 2
+  |-- local: i = 0
+
+
+--------------------------------
+2020-12-24 02:53:25
+
+/*Original Traceback*/
+Traceback (most recent call last):
+  File "c:\Users\Dave Ting\Desktop\error_catcher\error_catcher.py", line 143, in decorated
+    func()
+  File "c:\Users\Dave Ting\Desktop\error_catcher\test.py", line 41, in foo6
+    return k / i
+ZeroDivisionError: division by zero
+
+/*Variables*/
+c:\Users\Dave Ting\Desktop\error_catcher\error_catcher.py, line 143
+|-- Detected relevant vars:
+  |-- local: func = <function foo6 at 0x000002C13D9FA670>
+c:\Users\Dave Ting\Desktop\error_catcher\test.py, line 41
+|-- Detected relevant vars:
+  |-- local: k = 2
+  |-- local: i = 0
+|-- Other traced vars:
+  |-- global: l = 4
+
+

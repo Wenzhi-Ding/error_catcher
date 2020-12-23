@@ -1,0 +1,9 @@
+README.md
+setup.py
+error_catcher/__init__.py
+error_catcher/error_catcher.py
+error_catcher.egg-info/PKG-INFO
+error_catcher.egg-info/SOURCES.txt
+error_catcher.egg-info/dependency_links.txt
+error_catcher.egg-info/top_level.txt
+test/test.py
