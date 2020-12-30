@@ -140,7 +140,7 @@ def silent(key_vars=[], log_file='', ascending=False):
         @wraps(func)
         def decorated(*args, **kwargs):
             try:
-                func(*args, **kwargs)
+                return func(*args, **kwargs)
             except:
                 # Basic prompt
                 timestamp = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
@@ -168,6 +168,12 @@ def silent(key_vars=[], log_file='', ascending=False):
         return decorated
     return silent_decorcator
 
+
+@silent(log_file='', key_vars=['para'], ascending=False)
+def test_return(para):
+    return para + 1
+
+
 @silent(log_file='', key_vars=['irrelevant'], ascending=False)
 def test(para):
     irrelevant = 123456  # To detect the catching module. This shouldn't be caught automatically but manually.
@@ -175,5 +181,7 @@ def test(para):
     for idx in range(2):
         print(lst[idx])
 
+
 if __name__ == '__main__':
+    print(test_return(2))
     test(1)
